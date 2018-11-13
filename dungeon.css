@@ -3,12 +3,19 @@ body {
 }
 .header{
   padding: 60px;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   font-style: italic;
 }
+#title{
+  right: 300px;
+}
 
-.header img{
-  float: right;
-  position: static;
+#pic{
+  position: relative;
+  right: -60px;
+  top: -200px;
+
+
+
 }
