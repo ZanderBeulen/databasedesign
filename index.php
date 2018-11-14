@@ -1,4 +1,20 @@
-<!doctype html>
+<html>
+    <?php
+$servername = "104.198.255.44";
+$username = "root";
+$password = "jensen27";
+$db = "spheric-wonder-215616:us-central1:jenskd-27";
+
+$dbconnect=mysqli_connect($servername,$username,$password,$db);
+
+if ($dbconnect->connect_error) {
+    die("Connection Failed: " . $dbconnect->connect_error);
+}
+echo "Connected successfully";
+
+$dbconnect->close();
+?>
+  
 <html lang="en">
 <head>
   <meta charset="utf-8">
