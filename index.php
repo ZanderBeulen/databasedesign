@@ -1,4 +1,5 @@
 <html>
+    <body>
     <?php
 $servername = "104.198.255.44";
 $username = "root";
@@ -10,13 +11,12 @@ $dbconnect=mysqli_connect($servername,$username,$password,$db);
 if ($dbconnect->connect_error) {
     die("Connection Failed: " . $dbconnect->connect_error);
 }
-echo "Connected successfully";
+echo <h3>"Connected successfully"</h3>
 
 $dbconnect->close();
 ?>
   
 <html lang="en">
-<head>
   <meta charset="utf-8">
 
   <title>Dungeons and Dragons Spell Guide </title>
@@ -27,9 +27,7 @@ $dbconnect->close();
 
   <link rel="stylesheet" type="text/sql" href="spells.sql">
 
-</head>
 
-<body>
   <div class="header">
     <div id="title">
     <h1>Dungeon and Dragons Spells</h1>
